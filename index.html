@@ -132,14 +132,26 @@
       <!-- footer -->
       <footer>
         <!-- email signup -->
-        Mail listemize katılın! Üye Ol
+        <!-- burada form elementini kullanıyoruz,w3schooldan düzenliyoruz -->
+        <form>
+          <label for="e-mail">Mail listemize katılın!</label><br />
+          <input
+            type="e-mail"
+            id="fname"
+            placeholder="e-posta adresi"
+            name="fname"
+            value=""
+          />
+          <input type="submit" value="Üye Ol!" />
+        </form>
+
         <!-- nav -->
         <nav>
           <div>
             <a href="menu.html">Menü</a>
-            <a href="#">Rezervasyonlar</a>
-            <a href="#">Özel Teklifler</a>
-            <a href="#">İletişim</a>
+            <a href="./reservation.html">Rezervasyonlar</a>
+            <a href="./specials.html">Özel Teklifler</a>
+            <a href="./contact.html">İletişim</a>
           </div>
         </nav>
 
