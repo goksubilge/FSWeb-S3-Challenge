@@ -176,6 +176,14 @@ a {
   font-size: 3rem;
 }
 
+a:link {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* header section */
 header {
   width: 100%;
@@ -184,6 +192,22 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.top-bar {
+  background-color: rgb(0, 4, 17, 0.8);
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+nav {
+  max-width: 1080px;
+  margin: 0 auto; /* menü kendini ve başılığı 1080pxe kadar ortalasın istediğim için böyle sağladım */
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* spacer */
