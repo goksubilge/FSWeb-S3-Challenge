@@ -191,6 +191,29 @@ header {
   background-repeat: no-repeat;
 }
 
+.top-bar {
+  background-color: rgb(0, 4, 17, 0.8);
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+nav {
+  max-width: 1080px;
+  margin: 0 auto; /* menü kendini ve başılığı 1080pxe kadar ortalasın istediğim için böyle sağladım */
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
+
 /* spacers */
 .spacer {
   width: 100%;
