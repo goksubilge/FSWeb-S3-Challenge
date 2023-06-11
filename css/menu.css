@@ -234,6 +234,29 @@ nav {
   background-repeat: no-repeat;
 }
 
+.menu1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-image: url("../img/staff-bartender.jpg");
+  background-color: rgb(0, 4, 17);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu3 {
+  display: flex;
+  flex-direction: column;
+}
+
 /* footer section */
 footer {
   width: 100%;
