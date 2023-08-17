@@ -130,6 +130,7 @@ table {
 
 * {
   box-sizing: border-box;
+  color: white;
 }
 
 html {
@@ -176,17 +177,6 @@ a {
   font-size: 3rem;
 }
 
-a:link {
-  color: white;
-  display: inline;
-  margin: 5%
-}
-
-a:hover {
-  text-decoration: underline;
-  color: blueviolet;
-}
-
 /* header section */
 header {
   width: 100%;
@@ -196,21 +186,36 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.top-bar {
+.header-background {
+  width: 100%;
   background-color: rgb(0, 4, 17, 0.8);
-  text-align: center;
-  padding-bottom: 2.5rem;
-}
-
-nav {
-  max-width: 1080px;
-  margin: 0 auto; /* menü kendini ve başılığı 1080pxe kadar ortalasın istediğim için böyle sağladım */
-}
-
-.menu {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 0 0rem 0;
+}
+.title h1 a {
+  font-size: 6rem;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  gap: 12vw;
+}
+
+.navigation nav {
+  margin: 0;
+}
+.icons {
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5rem;
 }
 
 /* spacer */
@@ -235,45 +240,31 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: block;
-  padding: 1rem;
 }
 
-
-.menu .menu-title {
+.menu-title {
+  background-color: rgb(0, 4, 17, 0.8);
+}
+.menu-title h2 {
   text-align: center;
 }
-
-.menu-container {
+.whole-menu {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background-image: url("../img/staff-bartender.jpg");
-  background-color: rgb(0, 4, 17, 0.2);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 5rem;
+  gap: 4rem;
 }
-
-.menu .menu-container .menu-section  {
-  display: flex;
-  flex-direction: column;
-  justify-content: auto;
-  align-items:  auto;
-  width: 100%;
-  height: auto;
+.menu-section {
+  flex-basis: 40%;
 }
-
-.menu .menu-container .menu-section .menu-item {
+.menu-item {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu-item h4 {
+  flex-basis: 50%;
 }
 
 /* footer section */
@@ -282,9 +273,35 @@ footer {
   height: 15vh;
   padding-top: 2.5vh;
   font-size: 3rem;
-  background-color: black;
+  background-color: rgb(0, 4, 17);
+}
+button {
+  color: black;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+}
+.email {
+  flex-basis: 30%;
+}
+.menu-cr {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.nav nav {
   display: flex;
   flex-direction: row;
+  align-content: space-between;
+  gap: 6rem;
+}
+.copyright {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  align-items: flex-end;
 }
 
 /* mobile media query */
@@ -297,9 +314,42 @@ footer {
     font-size: 4rem;
   }
 
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+  }
+  .header-title {
+    text-align: center;
+    padding: 2rem 3rem 0 3rem;
+  }
+
+  .nav-items a {
+    font-size: 2.5rem;
+  }
+
   /* menu */
   .menu {
     background-image: none;
+    background-color: rgb(225, 239, 230);
+  }
+  .menu-title {
+    background-color: rgb(225, 239, 230);
+  }
+  .menu-title h3 {
+    padding: 1rem 2rem;
+    border: solid 0.5rem black;
+  }
+  .menu-title h2,
+  h3,
+  h4,
+  p {
+    color: black;
+    text-align: center;
+  }
+  .menu-item {
+    flex-direction: column;
   }
 
   /* footer section */
@@ -307,5 +357,21 @@ footer {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .nav nav a {
+    font-size: 2rem;
+  }
+  .copyright {
+    font-size: 1rem;
   }
 }
